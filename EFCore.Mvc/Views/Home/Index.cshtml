@@ -1,0 +1,14 @@
+﻿@using EFBlog.Domain.Entities
+@model List<Blog>
+
+@{
+    ViewData["Title"] = "Blogs";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Blogs</h1>
+    @foreach(Blog blog in Model)
+    {
+        <p>@blog.Url</p>
+    }
+</div>

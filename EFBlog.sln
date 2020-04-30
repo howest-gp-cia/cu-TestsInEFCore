@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D15E3B0C-6376-4A86-9FD1-BA289E50BB3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9C82D000-E8A8-4A64-8739-308BD399B246}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFBlog.Domain", "EFBlog.Domain\EFBlog.Domain.csproj", "{DA498CB4-ABC8-45C1-96F2-B4777773CC2B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore.Mvc", "EFCore.Mvc\EFCore.Mvc.csproj", "{B19E5562-6983-44BC-BA2A-21B35E48319A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFBlog.IntegrationTests", "EFBlog.IntegrationTests\EFBlog.IntegrationTests.csproj", "{EBA13E53-6CD9-4891-A3D8-5A5D86A10752}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFBlog.UnitTests", "EFBlog.UnitTests\EFBlog.UnitTests.csproj", "{AF1780D5-D7B6-4445-83A0-542AE60329DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFBlog.FunctionalTests", "EFBlog.FunctionalTests\EFBlog.FunctionalTests.csproj", "{6A23C198-C5F2-473F-A544-DDB6DBF6522E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{180298DE-3778-421E-A223-FF8C6C56D0E1}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA498CB4-ABC8-45C1-96F2-B4777773CC2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA498CB4-ABC8-45C1-96F2-B4777773CC2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA498CB4-ABC8-45C1-96F2-B4777773CC2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA498CB4-ABC8-45C1-96F2-B4777773CC2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B19E5562-6983-44BC-BA2A-21B35E48319A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B19E5562-6983-44BC-BA2A-21B35E48319A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B19E5562-6983-44BC-BA2A-21B35E48319A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B19E5562-6983-44BC-BA2A-21B35E48319A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBA13E53-6CD9-4891-A3D8-5A5D86A10752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA13E53-6CD9-4891-A3D8-5A5D86A10752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA13E53-6CD9-4891-A3D8-5A5D86A10752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA13E53-6CD9-4891-A3D8-5A5D86A10752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF1780D5-D7B6-4445-83A0-542AE60329DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF1780D5-D7B6-4445-83A0-542AE60329DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF1780D5-D7B6-4445-83A0-542AE60329DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF1780D5-D7B6-4445-83A0-542AE60329DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A23C198-C5F2-473F-A544-DDB6DBF6522E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A23C198-C5F2-473F-A544-DDB6DBF6522E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A23C198-C5F2-473F-A544-DDB6DBF6522E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A23C198-C5F2-473F-A544-DDB6DBF6522E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DA498CB4-ABC8-45C1-96F2-B4777773CC2B} = {D15E3B0C-6376-4A86-9FD1-BA289E50BB3E}
+		{B19E5562-6983-44BC-BA2A-21B35E48319A} = {D15E3B0C-6376-4A86-9FD1-BA289E50BB3E}
+		{EBA13E53-6CD9-4891-A3D8-5A5D86A10752} = {9C82D000-E8A8-4A64-8739-308BD399B246}
+		{AF1780D5-D7B6-4445-83A0-542AE60329DE} = {9C82D000-E8A8-4A64-8739-308BD399B246}
+		{6A23C198-C5F2-473F-A544-DDB6DBF6522E} = {9C82D000-E8A8-4A64-8739-308BD399B246}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63C91B5C-66DB-4E86-AECB-B54DBF256F53}
+	EndGlobalSection
+EndGlobal
