@@ -3,10 +3,8 @@ using EFBlog.Domain.Repositories;
 using EFCore.Mvc.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -37,6 +35,8 @@ namespace EFBlog.UnitTests
             Assert.Equal(4, model.Count());
         }
 
+        
+
         [Fact]
         public async Task IndexPost_ReturnsBadRequestResult_WhenModelStateIsInvalid()
         {
@@ -55,6 +55,7 @@ namespace EFBlog.UnitTests
             var badRequestResult = Assert.IsType<BadRequestObjectResult>(result);
             Assert.IsType<SerializableError>(badRequestResult.Value);
         }
+
 
 
         private List<Blog> GetTestBlogs()

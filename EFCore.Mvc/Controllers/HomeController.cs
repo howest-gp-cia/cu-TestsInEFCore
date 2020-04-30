@@ -23,11 +23,11 @@ namespace EFCore.Mvc.Controllers
             _blogService = blogService;
         }
 
-        
+
 
         public async Task<IActionResult> Index()
         {
-            return View( await _blogService.All());
+            return View(await _blogService.All());
         }
 
         [HttpPost]
@@ -44,7 +44,7 @@ namespace EFCore.Mvc.Controllers
             }
         }
 
-        
+
         public async Task<IActionResult> AddString(string blog)
         {
             await _blogService.Add(blog);

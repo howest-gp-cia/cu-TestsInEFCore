@@ -52,7 +52,7 @@ namespace EFBlog.IntegrationTests.InMemory
                 context.Database.EnsureCreated();
             }
 
-            // Insert seed data into the database using one instance of the context
+            // Insert data into the database using instance of the context
             using (var context = new BloggingContext(options))
             {
                 context.Blogs.Add(new Blog { Url = "https://example.com/cats" });
@@ -66,8 +66,11 @@ namespace EFBlog.IntegrationTests.InMemory
             {
                 var service = new BlogService(context);
                 var result = service.Find("cat");
-                // seeded blogitem with BlogId 2 also contains cat so total is 3
                 Assert.Equal(3, result.Count());
+
+                // not needed in this test, just to check our logic
+                // 4 records with EnsureCreated + 3 added records
+                // Assert.Equal(7, context.Blogs.Count());
             }
         }
     }

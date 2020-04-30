@@ -28,6 +28,8 @@ namespace EFBlog.Domain.Repositories
             _context.SaveChanges();
         }
 
+
+
         public virtual async Task<IEnumerable<Blog>> All()
         {
             return await _context.Blogs
